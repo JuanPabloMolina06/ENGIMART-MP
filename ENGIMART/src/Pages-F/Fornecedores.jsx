@@ -5,8 +5,8 @@ function Fornecedores(){
 <>
     <NavBar/>
 
-    <div className="flex justify-center mt-10">
-        <img src={"img-Fornecedores"} alt="Fornecedores" />
+    <div className="flex justify-center">
+        <img src={"img-Fornecedores.svg"} alt="Fornecedores" />
     </div>
 
     <div className="flex flex-col items-center mt-10">
