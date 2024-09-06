@@ -5,7 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'laranja': '#D5731C',
+        'cinza': '#1D1D1E',
+        'cinza-claro': '#6B6B6B',
+      },
+
+      fontFamily:{
+        'open-sans': ["Open Sans", "sans-serif"],
+      }
+
+    },
   },
   plugins: [],
 }
