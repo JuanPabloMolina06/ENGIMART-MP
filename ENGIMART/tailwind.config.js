@@ -14,6 +14,7 @@ export default {
 
       fontFamily:{
         'open-sans': ["Open Sans", "sans-serif"],
+        'fira-code': ["Fira Code", "monospace"],
       }
 
     },
