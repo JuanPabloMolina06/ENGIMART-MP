@@ -5,14 +5,12 @@ function Home(){
     return(
         <>
     <div className="relative min-h-screen flex flex-col justify-center items-center">
-
+        
       <img className="absolute top-0 left-0 h-full w-full object-cover -z-10" src={"./Bg-Home.png"} alt="Background" />
 
-      <div className="relative flex justify-center mt-10">
+    <div className="relative flex justify-center mt-10">
         <img src={"./logo-Home.png"} alt="Logo Engimart" className="w-[250px] h-auto" />
-
     </div>
-
   
     <div className="flex justify-around w-full mt-24">
     <button className="bg-white w-[350px] h-[350px] rounded-lg shadow-lg flex flex-col items-center justify-center ml-10 p-6 transition-transform transform hover:scale-110 hover:shadow-xl duration-300">
