@@ -10,6 +10,7 @@ export default {
         'laranja': '#D5731C',
         'cinza': '#1D1D1E',
         'cinza-claro': '#6B6B6B',
+        'giz': '#FAFAFA',
       },
 
       fontFamily:{

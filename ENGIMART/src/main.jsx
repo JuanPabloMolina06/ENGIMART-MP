@@ -6,6 +6,8 @@ import Fornecedores from './Pages-F/Fornecedores.jsx'
 import Comprador from './Pages-F/Comprador.jsx'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import Registrar from './Pages-F/Registrar.jsx'
+import Login from './Pages-F/Login.jsx'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,12 @@ const router = createBrowserRouter([
       },
       {
         path: "comprador", element: <Comprador/>
+      },
+      {
+        path: "fornecedores/registrar", element: <Registrar/>
+      },
+      {
+        path: "fornecedores/login", element: <Login/>
       }
     ]
   }
