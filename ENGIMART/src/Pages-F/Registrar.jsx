@@ -10,14 +10,14 @@ export default function Registrar() {
           alt="Background"
         />
 
-        <div className="relative flex justify-center mt-12">
+        <div className="relative flex justify-center">
           <img src={"/logo-Fornecedores2.png"} alt="Logo Engimart" className="w-[250px] h-auto" />
         </div>
 
-        <div className="bg-white w-[350px] h-[675px] rounded-3xl shadow-lg flex flex-col items-center mt-14 p-6">
+        <div className="bg-white w-[350px] h-[675px] rounded-3xl shadow-lg flex flex-col items-center justify-center mt-14 p-6">
           <h1 className="text-5xl font-bold mt-1">Registrar-se</h1>
 
-          <form className="space-y-4 flex flex-col mt-10">
+          <form className="space-y-4 flex flex-col justify-center items-center mt-10">
         <div>
           <input type="email" placeholder="E-mail" className="w-72 px-3 py-2 border border-laranja bg-giz rounded-xl shadow-sm focus:outline-none focus:ring-laranja focus:border-laranja" />
         </div>
@@ -63,7 +63,12 @@ export default function Registrar() {
         </button>
 
         <p className="text-sm text-cinza-claro mt-4">
-          Já tem conta? <a href="#" className="text-laranja">Entre aqui.</a>
+          Já tem conta? 
+          <Link to={"/fornecedores/login"}>
+            <a href="#" className="text-laranja ml-1">
+              Entre aqui.
+            </a>
+          </Link>
         </p>
       </form>
 
