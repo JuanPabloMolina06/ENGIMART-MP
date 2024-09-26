@@ -125,9 +125,9 @@ export default function ContatoF() {
                         </p>
 
                         <div className="flex justify-center items-center space-x-2">
-                            <img src={"/img-carta.png"} alt="Ícone de Carta" className="w-6 h-6" />
+                            <img src={"/img-carta.png"} alt="Ícone de Carta" className="w-7 h-6" />
                             <a href="mailto:contato@LoremIpsum.com.br" className="text-cinza-claro font-medium hover:underline" >
-                                contato@LoremIpsum.com.br
+                                ENGIMART@gmail.com
                             </a>
                     </div>
                 </div>
