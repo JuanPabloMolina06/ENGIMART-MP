@@ -14,7 +14,6 @@ function NavBar() {
             <img onClick={Voltar} src={'logo-Fornecedores.png'} className='ml-24'/>
             <ul className='flex mr-24 gap-10 text-2xl font-josefin opacity-100 text-white'>
                 <li><Link className='hover:underline' to={"/"}></Link></li>
-                <li><Link className='hover:underline' to={"registrar"}>Registrar</Link></li>
                 <li><Link className='hover:underline' to={"login"}>Login</Link></li>
                 <li><Link className='hover:underline' to={"vendas"}>Vendas</Link></li>
             </ul>
