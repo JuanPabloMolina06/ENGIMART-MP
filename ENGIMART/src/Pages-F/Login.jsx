@@ -1,6 +1,28 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { axios } from 'axios';
 
 export default function Login() {
+
+  const [login, setLogin] = useState([]);
+
+  const [email, setEmail] = useState()
+  const [senha, setSenha] = useState()
+
+  const handleSubmit = (e) => {
+    e.preventdefault()
+    axios.post('', {email, senha})
+    .then(result => console.log(result))
+    .catch(err => console.log(err))
+  }
+
+  useState(() => {
+    fetch('http://localhost:5173/login')
+    .then(res => res.json())
+    .then(res => setLogin(data))
+    .catch(err => console.log(err))
+  };[])
+
   return (
     <>
       <div className="relative min-h-screen flex flex-col justify-center items-center">
@@ -13,13 +35,13 @@ export default function Login() {
           <div className="bg-white w-[350px] h-[400px] rounded-3xl shadow-lg flex flex-col justify-center items-center mt-14 p-6">
             <h1 className="text-5xl font-bold mt-1">Login</h1>
 
-            <form className="space-y-4 flex flex-col mt-10">
+            <form onSubmit={handleSubmit} className="space-y-4 flex flex-col mt-10">
               <div>
-                <input type="email" placeholder="E-mail" className="w-72 px-3 py-2 border border-laranja bg-giz rounded-xl shadow-sm focus:outline-none focus:ring-laranja focus:border-laranja" />
+                <input type="email" onChange={(e) => setEmail(e.target.value)} placeholder="E-mail" className="w-72 px-3 py-2 border border-laranja bg-giz rounded-xl shadow-sm focus:outline-none focus:ring-laranja focus:border-laranja" />
               </div>
 
               <div>
-                <input type="password" placeholder="Senha" className="w-72 px-3 py-2 border border-laranja bg-giz rounded-xl shadow-sm focus:outline-none focus:ring-laranja focus:border-laranja" />
+                <input type="password" onChange={(e) => setSenha(e.target.value)} placeholder="Senha" className="w-72 px-3 py-2 border border-laranja bg-giz rounded-xl shadow-sm focus:outline-none focus:ring-laranja focus:border-laranja" />
               </div>
 
               <button className="bg-laranja text-white font-bold py-2 px-4 rounded-md w-72 mt-4">
