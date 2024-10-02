@@ -6,6 +6,9 @@ import VantagensF from "../Componentes-F/VantagensF.jsx";
 import FaqF from "../Componentes-F/FaqF.jsx";
 import ContatoF from "../Componentes-F/ContatoF.jsx";
 import Footer from "../Componentes-F/Footer";
+import FaqAll from "../Componentes-F/FaqAll.jsx";
+import Faq1 from "../Componentes-F/Faq1.jsx";
+import FaqH from "../Componentes-F/FaqH.jsx";
 
 function Fornecedores() {
   return (
@@ -20,12 +23,12 @@ function Fornecedores() {
 
       <VantagensF/>
 
-      <div className="w-full h-100">
-        <div className="p-4 flex flex-col justify-center ml-20 mr-10">
-          <h1 className="mb-10 mt-20 text-cinza font-bold text-3xl flex justify-center ">Perguntas frequentes</h1>
+      <FaqAll>
+        <Faq1>
+          <FaqH/>
           <FaqF/>
-        </div>
-      </div>
+        </Faq1>
+      </FaqAll>
 
       <ContatoF/>
 
