@@ -103,7 +103,6 @@ export default function ContatoF() {
                 </div>
                 
                 {/* Linha de Separação */}
-          
                 <div className="w-px h-auto bg-laranja"></div>
 
                     <div className="w-full max-w-md bg-white shadow-lg rounded-lg p-6 text-center">
