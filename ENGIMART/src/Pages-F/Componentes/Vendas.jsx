@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom"
-import Aside from "../Componentes/Aside"
+import Aside from "./Aside"
 
 export default function VendasF() {
     return(

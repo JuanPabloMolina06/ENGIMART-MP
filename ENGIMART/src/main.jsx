@@ -8,6 +8,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Registrar from './Pages-F/Registrar.jsx'
 import Login from './Pages-F/Login.jsx'
+import Vendas from './Pages-F/Componentes/Vendas.jsx'
+import EsqueceuSenha from './Pages-F/EsqueceuSenha.jsx'
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,12 @@ const router = createBrowserRouter([
       },
       {
         path: "fornecedores/login", element: <Login/>
+      },
+      {
+        path: "login/esqueceusenha", element: <EsqueceuSenha/>
+      },
+      {
+        path: "fornecedores/vendas", element: <Vendas/>
       }
     ]
   }

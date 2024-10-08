@@ -31,10 +31,8 @@ export default function Login() {
 
               <p className="text-sm text-cinza-claro mt-4">
                 Esqueceu sua senha?
-                <Link to={"/login/EsqueceuSenha"}>
-                  <a href="#" className="text-laranja ml-1">
+                <Link to={"/login/esqueceusenha"} className="text-laranja ml-1">
                     Clique aqui.
-                  </a>
                 </Link>
               </p>
               <p className="text-sm text-cinza-claro mt-4">
