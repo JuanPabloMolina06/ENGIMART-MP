@@ -6,7 +6,7 @@ export default function VendasF() {
             <div className="flex bg-neutral-500">
                 <Aside/>
             
-                <div className="flex flex-col ml-20 mr-20 justify-center bg-neutral-500">
+                <div className="flex flex-col ml-20 mr-20 justify-center bg-neutral-500 w-screen h-screen">
 
                     <div className="flex bg-white">
                         <h1>Total de vendas</h1>
@@ -28,7 +28,7 @@ export default function VendasF() {
                     </div>
                 </div>
 
-                <aside className="flex flex-col bg-white justify-end">
+                <aside className="flex flex-col bg-white justify-start">
                     <div>
                         <h1>Vendas do ano</h1>
                     </div>
