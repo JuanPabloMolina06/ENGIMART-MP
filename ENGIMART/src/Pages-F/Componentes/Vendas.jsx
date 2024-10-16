@@ -1,16 +1,16 @@
 import Aside from "./Aside"
+import BgVendas from "./BgVendas"
+import DashboardTotalVendas from "./DashboardTotalVendas"
 
 export default function VendasF() {
     return(
         <>
             <div className="flex bg-neutral-500">
                 <Aside/>
-            
-                <div className="flex flex-col ml-20 mr-20 justify-center bg-neutral-500 w-screen h-screen">
 
-                    <div className="flex bg-white">
-                        <h1>Total de vendas</h1>
-                    </div>
+                <BgVendas>
+
+                    <DashboardTotalVendas/>
 
                     <div className="flex mr-5">
 
@@ -26,7 +26,8 @@ export default function VendasF() {
                     <div className="flex">
                         <h1>Produtos mais vendidos</h1> 
                     </div>
-                </div>
+
+                </BgVendas>
 
                 <aside className="flex flex-col bg-white justify-start">
                     <div>

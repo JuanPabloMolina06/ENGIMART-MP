@@ -10,7 +10,7 @@ export default function Aside() {
 
   return (
     <>
-      <aside className="flex flex-col bg-white justify-start h-screen w-64 md:w-72 lg:w-80">
+      <aside className="flex flex-col bg-white justify-start min-h-screen w-64 md:w-72 lg:w-80">
         {/* Logo Responsiva */}
         <img
           src={"/Logo-Vendas.png"}
