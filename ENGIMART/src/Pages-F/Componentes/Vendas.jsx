@@ -1,6 +1,11 @@
 import Aside from "./Aside"
 import BgVendas from "./BgVendas"
+import CampoDashboard from "./CampoDashboard"
+import CampoDashboard2 from "./CampoDashboard2"
 import DashboardTotalVendas from "./DashboardTotalVendas"
+import PedidosPendentesVendas from "./PedidosPendentesVendas"
+import ProdutoCampeao from "./ProdutoCampeao"
+import ProdutosMaisVendidos from "./ProdutosMaisVendidos"
 
 export default function VendasF() {
     return(
@@ -11,21 +16,14 @@ export default function VendasF() {
                 <BgVendas>
 
                     <DashboardTotalVendas/>
+                    <CampoDashboard>
+                        <CampoDashboard2>
+                            <PedidosPendentesVendas/>
+                            <ProdutoCampeao/>
+                        </CampoDashboard2>
+                    </CampoDashboard>
 
-                    <div className="flex mr-5">
-
-                        <div>
-                            <h1>Pedidos pendentes</h1>
-                        </div>
-
-                        <div>
-                            <h1>Produto campeão</h1>
-                        </div>
-                    </div>
-
-                    <div className="flex">
-                        <h1>Produtos mais vendidos</h1> 
-                    </div>
+                    <ProdutosMaisVendidos/>
 
                 </BgVendas>
 
