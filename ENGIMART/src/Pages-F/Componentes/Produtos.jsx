@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Aside from "./Aside";
 import BgVendas from "./BgVendas";
 import ListadeProdutos from "./ListadeProdutos";
@@ -17,11 +18,11 @@ export default function Produtos() {
                         <h1 className="font-bold text-2xl ml-3">Seus produtos</h1>
                     </div>
                     <div className="bg-white w-64 h-10 rounded-lg flex items-center">
-                        
+                        <Link to="/produtos/adicionarprodutos">
                             <button className="font-bold text-2xl ml-3">
                                 Adicionar produto
                             </button>
-                          
+                        </Link>
                     </div>
                 </div>
                 

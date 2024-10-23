@@ -46,7 +46,7 @@ const CardProduto = ({ name, price, rating }) => {
       <img
         src="/cimento_produtos.png"
         alt="Produto"
-        className="mb-4 w-20 h-24"
+        className="mb-4 w-20 h-26"
       />
       <h3 className="text-center font-semibold text-lg">{name}</h3>
       <p className="text-center text-gray-600">{price}</p>
