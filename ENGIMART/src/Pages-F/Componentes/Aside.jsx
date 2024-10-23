@@ -34,7 +34,7 @@ export default function Aside() {
                   className="w-5 h-5"
                 />
                 <Link
-                  to=""
+                  to="/fornecedores/vendas"
                   className="font-semibold text-base md:text-lg text-cinza transition duration-300"
                 >
                   Dashboards
@@ -56,7 +56,7 @@ export default function Aside() {
                   className="w-5 h-5"
                 />
                 <Link
-                  to=""
+                  to="/fornecedores/produtos"
                   className="font-semibold text-base md:text-lg text-cinza transition duration-300"
                 >
                   Produtos
@@ -78,7 +78,7 @@ export default function Aside() {
                   className="w-7 h-7 -ml-1"
                 />
                 <Link
-                  to=""
+                  to="/fornecedores/lista"
                   className="font-semibold text-base md:text-lg text-cinza transition duration-300"
                 >
                   Lista de ordens
@@ -100,7 +100,7 @@ export default function Aside() {
                   className="w-5 h-5"
                 />
                 <Link
-                  to=""
+                  to="/forcenedores/estoque"
                   className="font-semibold text-base md:text-lg text-cinza transition duration-300"
                 >
                   Estoque
@@ -115,12 +115,12 @@ export default function Aside() {
                 } hover:bg-red-500 transition duration-300`}>
               <img
                   src={"/logout-vendas.png"}
-                  alt="Estoque"
+                  alt="logout"
                   className="w-5 h-5"
                 />
               <div className="flex flex-col justify-end">
                     <Link
-                        to={''}
+                        to={'/fornecedores'}
                         className="font-semibold text-base md:text-lg text-cinza transition duration-300"
                     >
                         Log Out
